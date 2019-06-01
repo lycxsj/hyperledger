@@ -1,8 +1,15 @@
 import React from 'react';
+import './style/tech.css';
+import Footer from './commponents/Footer';
 
 function Tech() {
   return (
-    <h1>Tech</h1>
+    <div className="tech">
+      <div className="frame"></div>
+      <div className="bottom"></div>
+      <div className="advantage"></div>
+      <Footer/>
+    </div>
   )
 }
 

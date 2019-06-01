@@ -9,8 +9,13 @@ const { SubMenu }  = Menu;
 
 class App extends React.Component {
   state = {
-    current: 'Tech'
+    current: 'Home'
   };
+  emit = value => {
+    this.setState({
+      current: value
+    })
+  }
   handleClick = e => {
     this.setState({
       current: e.key
@@ -20,7 +25,7 @@ class App extends React.Component {
     return (
       <div>
       <div style={{ display: 'flex', backgroundColor: '#001529' }}>
-      <img src={logo} alt="logo" width="100px" height="48px" /><span style={{color: '#fff', fontSize: '28px'}}>智能服务交易与监管技术平台</span>
+      <img src={logo} alt="logo" width="60px" height="48px" /><span style={{color: '#fff', fontSize: '28px'}}>智能服务交易与监管技术平台</span>
       <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal" theme="dark">
         <Menu.Item key="Home">
           <Icon type="home" />
@@ -61,14 +66,15 @@ class App extends React.Component {
           }
         >
           <Menu.ItemGroup>
-            <Menu.Item key="setting:4">主客体交易</Menu.Item>
-            <Menu.Item key="setting:5">知识产权交易</Menu.Item>
-            <Menu.Item key="setting:6">供应链金融与溯源</Menu.Item>
+            <Menu.Item key="case1">主客体交易</Menu.Item>
+            <Menu.Item key="case2">知识产权交易</Menu.Item>
+            <Menu.Item key="case3">供应链金融与溯源</Menu.Item>
           </Menu.ItemGroup>
         </SubMenu>
       </Menu>
     </div>
-    <Body name={this.state.current} />
+    {/* 页面内容插槽 */}
+    <Body name={this.state.current} emit={this.emit.bind(this)}/>
     </div>
     );
   }

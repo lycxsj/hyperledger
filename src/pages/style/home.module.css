@@ -3,7 +3,7 @@
   height: 20px;
   margin: 0 auto;
 }
-h2{
+.feature h2{
   color: #fff!important;
   font-size: 24px;
 }
@@ -40,7 +40,7 @@ h2{
   background-color: #fff;
   justify-content: space-around
 }
-button {
+.button button {
   font-size: 26px!important;
   color: #ccc;
   padding: 20px 60px;
@@ -48,7 +48,7 @@ button {
   border-radius: 5px;
   background: -webkit-linear-gradient(top, #ff9f3c 0%, #ff7d2d 50%, #ff9f3c 100%) no-repeat center top;
 }
-button:hover {
+.button button:hover {
   background: -webkit-linear-gradient(top, #ffbf4e 0%, #ff9f3f 50%, #ffbf5e 100%) no-repeat center top;
 }
 .advance {
@@ -149,4 +149,5 @@ button:hover {
   text-align: center;
   color: #111;
   font-size: 17px;
+  padding: 0 20px;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './asset/2.jpg';
 import Footer from './commponents/Footer.jsx';
-import './style/home.css';
+import './style/home.module.css';
 
 function User() {
   return (
@@ -15,7 +15,7 @@ function User() {
             </div>
         </div>
         <div>
-            <img src={logo} alt="logo" style={{margin: '0 auto'}}/>   
+            <img src={logo} alt="logo" style={{margin: '0 auto'}}/>
         </div>
       </div>
     	<div align="center">
@@ -23,7 +23,7 @@ function User() {
               <button><a href="http://10.11.252.44:8081">用户入口</a></button>
         	</div>
         </div>
-        <Footer/>  
+        <Footer/>
     </div>
   )
 }

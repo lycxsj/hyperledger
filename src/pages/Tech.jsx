@@ -1,13 +1,13 @@
 import React from 'react';
-import './style/tech.css';
+import style from './style/tech.module.css';
 import Footer from './commponents/Footer';
 
 function Tech() {
   return (
-    <div className="tech">
-      <div className="frame"></div>
-      <div className="bottom"></div>
-      <div className="advantage"></div>
+    <div className={style.tech}>
+      <div className={style.frame}></div>
+      <div className={style.bottom}></div>
+      <div className={style.advantage}></div>
       <Footer/>
     </div>
   )

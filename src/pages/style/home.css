@@ -24,7 +24,7 @@ h2{
 }
 .title {
   padding-top: 20px;
-  font-family: "San Francisco";
+  font-family: "黑体";
   text-align: center;
   font-size: 32px;
   color: #fff
@@ -139,4 +139,14 @@ button:hover {
   top: 50%;
   left: 20%;
   border-radius: 20px;
+}
+.bdetail{
+  margin-top: 0%;
+  display: flex;
+}
+.bdetail h3 {
+  width: 25%;
+  text-align: center;
+  color: #111;
+  font-size: 17px;
 }

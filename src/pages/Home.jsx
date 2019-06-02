@@ -4,9 +4,9 @@ import './style/home.css';
 import logo from './asset/2.jpg'
 const nodes = [
   {name: '数字资产', color: '#23e2d3'},
-  {name: '鉴证证明', color: '#e2f133'},
+  {name: '交易验证', color: '#e2f133'},
   {name: '共享账本', color: '#11ff32'},
-  {name: '分享经济', color: '#f231a1'}
+  {name: '知识产权', color: '#f231a1'}
 ]
 
 const random = (phase) => {
@@ -34,13 +34,15 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <div className="banner">
-          <div className="title">智能服务交易与监管技术平台<br/>Trust CUFE</div>
+          <div className="title">国家重点研发专项<br/>智能服务交易与监管技术基础平台</div>
           <div className="background" style={{position: 'relative'}}>
             {/* <img src={background} alt="background" width="100%"/> */}
             {nodes.map((node, index) =>renderNode(node, index, phase))}
           </div>
           <div className="slogan">打造数字经济时代信任基石</div>
-          <div className="detail">数字资产 / 鉴证证明 / 共享账本 / 分享经济</div>
+          <div>&nbsp;</div>
+          <div className="detail">数字资产 / 交易验证 / 共享账本 / 知识产权</div>
+          <div>&nbsp;</div>
         </div>
         <div className="asset">
           <div>
@@ -59,20 +61,27 @@ class Home extends React.Component {
         <div className="advance">
           <div className="title">我们的优势</div>
           <ul className="feature">
-            <li><div className="performance"></div><h2>性能领先</h2><p>xxxx</p></li>
-            <li><div className="effective"></div><h2>灵活高效</h2><p>xxxx</p></li>
-            <li><div className="swift"></div><h2>快速接入</h2><p>xxxx</p></li>
-            <li><div className="safe"></div><h2>灵活安全</h2><p>xxxx</p></li>
+            <li><div className="performance"></div><h2>性能领先</h2><p>高吞吐</p></li>
+            <li><div className="effective"></div><h2>灵活高效</h2><p>可插拔模块</p></li>
+            <li><div className="swift"></div><h2>快速接入</h2><p>一键部署</p></li>
+            <li><div className="safe"></div><h2>实用安全</h2><p>新型密码</p></li>
           </ul>
         </div>
         <div className="platform">
-          <h2>智能服务交易与监管技术平台</h2>
+          <h2>智能服务交易与监管技术基础平台</h2>
           <div className="business">
-          <p>鉴证证明</p>
-          <p>贡献经济</p>
-          <p>共享账本</p>
-          <p>智能合约</p>
-          <p>数字资产</p>
+            <p>交易验证</p>
+            <p>知识产权</p>
+            <p>共识机制</p>
+            <p>新型密码</p>
+            <p>性能测试</p>
+          </div>
+          <div className="bdetail">
+          <h3>基于主客体交易基础信息验证方案</h3>
+          <h3>高新技术企业在监管机构下参与区块链知识产权交易系统</h3>
+          <h3>基于Fabric架构的网络，支持课题组自研共识的多种可插拔共识机制</h3>
+          <h3>支持国密标准的加密算法</h3>
+          <h3>支持即插即用的区块链系统基准性能测试</h3>
           </div>
         </div>
         <Footer/>

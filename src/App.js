@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <div>
       <div style={{ display: 'flex', backgroundColor: '#001529' }}>
-      <img src={logo} alt="logo" width="60px" height="48px" /><span style={{color: '#fff', fontSize: '28px'}}>智能服务交易与监管技术平台</span>
+      <img src={logo} alt="logo" width="60px" height="48px" /><span style={{color: '#fff', fontSize: '28px'}}>智能服务交易与监管技术基础平台</span>
       <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal" theme="dark">
         <Menu.Item key="Home">
           <Icon type="home" />
@@ -45,7 +45,10 @@ class App extends React.Component {
           }
         >
           <Menu.ItemGroup>
-            <Menu.Item key="Baas">BaaS开放平台</Menu.Item>
+            <Menu.Item key="Operator">
+              管理员入口
+            </Menu.Item>
+            <Menu.Item key="User">用户入口</Menu.Item>
             <Menu.Item key="Document">开发文档</Menu.Item>
             <Menu.Item key="Manual">用户手册</Menu.Item>
           </Menu.ItemGroup>
@@ -68,7 +71,7 @@ class App extends React.Component {
           <Menu.ItemGroup>
             <Menu.Item key="case1">主客体交易</Menu.Item>
             <Menu.Item key="case2">知识产权交易</Menu.Item>
-            <Menu.Item key="case3">供应链金融与溯源</Menu.Item>
+            <Menu.Item key="case3">溯源与供应链金融</Menu.Item>
           </Menu.ItemGroup>
         </SubMenu>
       </Menu>

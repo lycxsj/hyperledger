@@ -8,6 +8,8 @@ import Case2 from './pages/Case2.jsx';
 import Case3 from './pages/Case3.jsx';
 import Document from './pages/Document.jsx';
 import Manual from './pages/Manual.jsx';
+import Operator from './pages/Operator.jsx';
+import User from './pages/User.jsx';
 
 class Body extends React.Component {
   // 新增页面时，导入页面组件，在switch中增加映射即可
@@ -29,6 +31,10 @@ class Body extends React.Component {
           return <Case2 />;
         case 'case3':
           return <Case3 />;
+        case 'Operator':
+          return <Operator />;
+        case 'User':
+          return <User />;
         default:
           return <Home emit={this.emit.bind(this)} />;
       }

@@ -6,4 +6,4 @@ function Manual() {
   )
 }
 
-export default Manual;
+export default Manual; 

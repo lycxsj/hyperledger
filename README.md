@@ -1,5 +1,5 @@
 ## 智能服务交易与监管技术基础平台
-### 页面开发流程
+### *页面开发流程*
 - 在pages文件夹下编写页面组件，一个页面写一个组件即可
 - 编写组件样式时，采用模块化样式，样式文件在style文件夹下写，命名统一以 ***.module.css*** 结尾
 ```js
@@ -19,7 +19,21 @@ render() {
 
 - 最后在 ***App.js*** 中增加导航菜单，声明其key属性，导航组件会相应点击事件并将自动key值绑定为Body的name属性
 
-### 项目协作流程
+### *组件说明*
+- 代码块组件
+  * 通过import引入components/CodeBlock组件
+  * 从父组件接受两个参数 ***language***、 ***codeString***，一个是代码用的语言[支持的语言列表在这](https://github.com/conorhastings/react-syntax-highlighter/blob/master/AVAILABLE_LANGUAGES_HLJS.MD), 另一个是代码内容， ***\n*** 分隔代码的不同行
+
+- 脚注组件
+  * 通过import引入components/Footer组件
+  * 通过 ```<Footer />``` 使用
+
+- 数据表格组件
+  * 通过import引入components/DataTable组件
+  * 从父组件接受两个参数 ***columns***、 ***dataSource***，一个是描述表格每一列的列表数据，一个是表格内容的列表数据
+  * 两个参数的具体说明可以看[文档](https://ant-design.gitee.io/components/table-cn/)
+
+### *项目协作流程*
 - 项目git仓库地址为[楼胤成的GitHub](https://github.com/lycxsj/hyperledger)
 - 本地开发时先 ***Fork*** 到自己的GitHub仓库然后从自己的仓库拉取代码
 ```bash
